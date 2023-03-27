@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="251dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/culture"
+                android:layout_height="wrap_content">
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:id="@+id/imgblue"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/bulepurpleled"
+                        android:layout_height="80dp">
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="补蓝紫光"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:src="@drawable/redled"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/imgred"
+                        android:layout_height="80dp">
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="补红光"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="80dp"
+
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ph"
+                        android:layout_height="40dp">
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/text_ph"
+                        android:text="PH值"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+<!--农田灌溉模式-->
+<!--            自动灌溉模式-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp"
+                tools:context=".SwitchDefaultActivity">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/zidong"
+                        android:layout_height="60dp">
+                    </ImageView>
+                    <TextView
+                        android:id="@+id/text_auto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:text="自动灌溉模式" />
+                    <Switch
+                        android:id="@+id/btn_auto"
+                        android:layout_width="80dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="end"
+                        android:padding="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+<!--            手动灌溉模式-->
+<!--            一号农田-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp"
+                tools:context=".SwitchDefaultActivity">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/soil"
+                        android:layout_height="60dp">
+                    </ImageView>
+                    <TextView
+                        android:id="@+id/text_test"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:text="农田1的湿度" />
+                    <Switch
+                        android:id="@+id/btn_1"
+                        android:layout_width="80dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="end"
+                        android:padding="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+<!--二号农田-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp"
+                tools:context=".SwitchDefaultActivity">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/soil"
+                        android:layout_height="60dp">
+                    </ImageView>
+                    <TextView
+                        android:id="@+id/text_test2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:text="农田1的湿度" />
+                    <Switch
+                        android:id="@+id/btn_2"
+                        android:layout_width="80dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="end"
+                        android:padding="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
