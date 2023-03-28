@@ -1,0 +1,7 @@
+# Oasis-agricultural-wisdom-irrigation-system硬件Arduino
+手机端Android
+WEB服务器
+WEB大屏可视化展示土壤数据，不同区域湿度等
+Androd通过mqtt包直接和硬件端通信。
+所以Android和web都可以配合arduino单独使用
+此项目可适用于物联网初学者学习研究，不难
